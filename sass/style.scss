@@ -1,7 +1,7 @@
 $color_test: pink;
 
 $brand-primary: #2f403c;
-$color-green: tomato;
+$color-green: #ff6347;
 
 body, html {
   height: 100%;
@@ -200,24 +200,47 @@ header {
     }
   }
 }
+
+.sideContacts {
+	float: left;
+	margin-left: 0;
+	margin-top: 290px;
+	color: $color-green;
+	ul {
+		margin-left: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 20px;
+		li {
+			margin: 0;
+			border: 1px solid $color-green;
+			padding: 0;
+			&.active,
+            &:active,
+      		&:focus,
+      		&:hover {
+      		  background-color: rgba(255, 255, 255, 0.3);
+      		  }
+			i {
+				margin: 0;
+				padding: 6px;
+			}
+		}
+	}
+	#face-icon-head {
+		width: 33px;
+	}
+}
+
 // End Of Header ************************************************
 
-/* .divider {
-  width: 400px;
+.divider {
+  width: 100px;
   display: block;
   margin: 0 auto;
-  margin-top: 100px;
-  i {
-   color: $color-green;
-   font-size: 35px;
-  }
-  &:before {
-  right: 15px;
-  }
-  &:after {
-  left: 15px;
-  }
-} */
+  margin-top: 60px;
+
+} 
 
 .title {
 	//border-top: 0.5px solid $color-green;
@@ -281,14 +304,159 @@ header {
   	}
 }
 //End of container1**********************************************
+//Container SIBIU************************************************
 .container_sibiu {
-	background-color: red;
+	
 }
 #titlu_sibiu {
-	margin-top: 200px;
-	background-color: red;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	
 }
+.tourDetails {
+	text-align: left;
+	argin-left: 0;
+	ul {
+		list-style: circle;
+		margin-left: 0;
+		li {
+			margin-left: 0;
+			text-transform: uppercase;
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			font-size: 1.1em;
+		}
+	}
 
+}
+.secondRow {
+	margin-top: 30px;
+}
+.col-md-4 > .photos {
+	margin-right: 0;
+	margin-left: 0;
+}
+.photos {
+	margin: 0;
+	max-width: 100%;
+	overflow: hidden;
+}
+// CALENDAR ******************************************
+#calendar {
+    margin-top: 30px;
+	margin-bottom: 30px;
+}
+.ui-datepicker, .ui-datepicker table, .ui-datepicker tr, .ui-datepicker td, .ui-datepicker th {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.ui-datepicker {
+    display: none;
+    max-width: 320px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: $brand-primary;
+ }
+.ui-datepicker-header {
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #a8a8a8;
+}
+.ui-datepicker-title { text-align: center; }
+.ui-datepicker-month {
+    position: relative;
+    padding-right: 15px;
+    color: #a8a8a8;
+}
+.ui-datepicker-year {
+    padding-left: 8px;
+    color: #a8a8a8;
+}
+.ui-datepicker-month:before {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    content: '';
+ 
+    background: $color-green;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    position: absolute;
+    top: -2px;
+    padding: 5px;
+    cursor: pointer;
+}
+ 
+.ui-datepicker-prev {
+    left: 0;
+    padding-left: 0;
+}
+ 
+.ui-datepicker-next {
+    right: 0;
+    padding-right: 0;
+}
+ 
+.ui-datepicker-prev span,
+.ui-datepicker-next span{
+    display: block;
+    width: 5px;
+    height: 10px;
+    text-indent: -9999px;
+ 
+    background-image: url(../img/arrows.png);
+}
+ 
+.ui-datepicker-prev span { background-position: 0px 0px; }
+ 
+.ui-datepicker-next span { background-position: -5px 0px; }
+ 
+.ui-datepicker-prev-hover span { background-position: 0px -10px; }
+ 
+.ui-datepicker-next-hover span { background-position: -5px -10px; }
+.ui-datepicker-calendar th {
+    padding-top: 15px;
+    padding-bottom: 10px;
+ 
+    text-align: center;
+    font-weight: normal;
+    color: #a8a8a8;
+}
+.ui-datepicker-calendar td {
+    padding: 0 7px;
+ 
+    text-align: center;
+    line-height: 26px;
+}
+ 
+.ui-datepicker-calendar .ui-state-default {
+    display: block;
+    width: 26px;
+    outline: none;
+ 
+    text-decoration: none;
+    color: #a8a8a8;
+ 
+    border: 1px solid transparent;
+}
+.ui-datepicker-calendar .ui-state-active {
+    color: $color-green;
+    border: 1px solid $color-green;
+}
+ 
+.ui-datepicker-other-month .ui-state-default { color: #565656; }
+
+//End of Container SIBIU************************************************
 //Container 2 ***************************************************
 .container2 {
 	//background-color: lightgrey;
@@ -427,5 +595,16 @@ footer {
    }
     footer .colRight{
      border-left: none;
+    }
+    .sideContacts {
+    	display: none;
+    }
+    #calendar {
+    	display: none;
+    }
+    .divider {
+    	img {
+    	margin-bottom: -35px;
+        }
     }
 }

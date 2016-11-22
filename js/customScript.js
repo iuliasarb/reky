@@ -6,4 +6,14 @@ $(document).ready(function(){
       $("#mainNav").css("background-color", "transparent"); 
     }
   });
+
+
+  $('#calendar').datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    });
+
+
 });
