@@ -15,7 +15,7 @@ body {
 }
 
 p, h1, h2, span {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /* hr {
 	border-color: lightgrey;
@@ -105,6 +105,13 @@ p, h1, h2, span {
  	background-color: red;
  	color:red;
  }
+.navbarTours {
+  border-top: 0.5px solid $color-green;
+  border-bottom: 0.5px solid $color-green;
+}
+.txtNav {
+	text-transform: uppercase;
+}
 
 // End Of Custom Navigation Bar *************************
 
@@ -264,6 +271,11 @@ header {
 	    vertical-align: middle;
 	}
 }
+.above {
+	margin-top: -120px;
+	height: 100px;
+	width: 100%;
+}
 
 //Container 1 ***************************************************
 .container1 {
@@ -311,13 +323,14 @@ header {
 #titlu_sibiu {
 	margin-top: 60px;
 	margin-bottom: 30px;
-	
+	text-transform: uppercase;	
 }
 .tourDetails {
-	text-align: left;
+
+	text-align: right;
 	argin-left: 0;
 	ul {
-		list-style: circle;
+		list-style: none;
 		margin-left: 0;
 		li {
 			margin-left: 0;
@@ -327,21 +340,26 @@ header {
 			font-size: 1.1em;
 		}
 	}
+}
+.tourText {
+	margin-top: -22px;
+	text-align: left;
+	span {
+		font-weight: bold;
+	}
+}
+.hLine {
+	width: 30%;
+	height: 20px;
+	margin: 0 auto;
+	border-bottom: 1px solid $color-green;
+	margin-bottom: 40px;
+}
+.tiTour {
+	color: $color-green;
+}
 
-}
-.secondRow {
-	margin-top: 30px;
-}
-.col-md-4 > .photos {
-	margin-right: 0;
-	margin-left: 0;
-}
-.photos {
-	margin: 0;
-	max-width: 100%;
-	overflow: hidden;
-}
-// CALENDAR ******************************************
+/* CALENDAR ******************************************
 #calendar {
     margin-top: 30px;
 	margin-bottom: 30px;
@@ -396,17 +414,14 @@ header {
     padding: 5px;
     cursor: pointer;
 }
- 
 .ui-datepicker-prev {
     left: 0;
     padding-left: 0;
 }
- 
 .ui-datepicker-next {
     right: 0;
     padding-right: 0;
 }
- 
 .ui-datepicker-prev span,
 .ui-datepicker-next span{
     display: block;
@@ -416,29 +431,22 @@ header {
  
     background-image: url(../img/arrows.png);
 }
- 
 .ui-datepicker-prev span { background-position: 0px 0px; }
- 
 .ui-datepicker-next span { background-position: -5px 0px; }
- 
 .ui-datepicker-prev-hover span { background-position: 0px -10px; }
- 
 .ui-datepicker-next-hover span { background-position: -5px -10px; }
 .ui-datepicker-calendar th {
     padding-top: 15px;
     padding-bottom: 10px;
- 
     text-align: center;
     font-weight: normal;
     color: #a8a8a8;
 }
 .ui-datepicker-calendar td {
     padding: 0 7px;
- 
     text-align: center;
     line-height: 26px;
 }
- 
 .ui-datepicker-calendar .ui-state-default {
     display: block;
     width: 26px;
@@ -453,9 +461,8 @@ header {
     color: $color-green;
     border: 1px solid $color-green;
 }
- 
 .ui-datepicker-other-month .ui-state-default { color: #565656; }
-
+*/
 //End of Container SIBIU************************************************
 //Container 2 ***************************************************
 .container2 {
@@ -606,5 +613,18 @@ footer {
     	img {
     	margin-bottom: -35px;
         }
+    }
+    .tourDetails {
+	text-align: left;
+	margin-left: 0;
+	ul {
+	  margin-left: -40px;
+      }
+    }
+    .tourText {
+    	h2 {
+    		margin-top: 40px;
+    		font-size: 20px;
+    	}
     }
 }

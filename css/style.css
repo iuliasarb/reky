@@ -8,7 +8,7 @@ body {
   height: 100%; }
 
 p, h1, h2, span {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 /* hr {
 	border-color: lightgrey;
@@ -66,6 +66,13 @@ p, h1, h2, span {
 .navbarRightUp .open {
   background-color: red;
   color: red; }
+
+.navbarTours {
+  border-top: 0.5px solid #ff6347;
+  border-bottom: 0.5px solid #ff6347; }
+
+.txtNav {
+  text-transform: uppercase; }
 
 header {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/prime-bg.jpg");
@@ -192,6 +199,11 @@ header {
     line-height: 40px;
     vertical-align: middle; }
 
+.above {
+  margin-top: -120px;
+  height: 100px;
+  width: 100%; }
+
 .container1 {
   margin-bottom: 100px; }
 
@@ -228,13 +240,14 @@ header {
 
 #titlu_sibiu {
   margin-top: 60px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-transform: uppercase; }
 
 .tourDetails {
-  text-align: left;
+  text-align: right;
   argin-left: 0; }
   .tourDetails ul {
-    list-style: circle;
+    list-style: none;
     margin-left: 0; }
     .tourDetails ul li {
       margin-left: 0;
@@ -243,127 +256,126 @@ header {
       font-weight: bold;
       font-size: 1.1em; }
 
-.secondRow {
-  margin-top: 30px; }
+.tourText {
+  margin-top: -22px;
+  text-align: left; }
+  .tourText span {
+    font-weight: bold; }
 
-.col-md-4 > .photos {
-  margin-right: 0;
-  margin-left: 0; }
+.hLine {
+  width: 30%;
+  height: 20px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ff6347;
+  margin-bottom: 40px; }
 
-.photos {
-  margin: 0;
-  max-width: 100%;
-  overflow: hidden; }
+.tiTour {
+  color: #ff6347; }
 
+/* CALENDAR ******************************************
 #calendar {
-  margin-top: 30px;
-  margin-bottom: 30px; }
-
+    margin-top: 30px;
+	margin-bottom: 30px;
+}
 .ui-datepicker, .ui-datepicker table, .ui-datepicker tr, .ui-datepicker td, .ui-datepicker th {
-  margin: 0;
-  padding: 0;
-  border: none; }
-
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 .ui-datepicker {
-  display: none;
-  max-width: 320px;
-  padding: 10px;
-  text-transform: uppercase;
-  font-size: 11px;
-  background: #2f403c; }
-
+    display: none;
+    max-width: 320px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: $brand-primary;
+ }
 .ui-datepicker-header {
-  position: relative;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #a8a8a8; }
-
-.ui-datepicker-title {
-  text-align: center; }
-
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #a8a8a8;
+}
+.ui-datepicker-title { text-align: center; }
 .ui-datepicker-month {
-  position: relative;
-  padding-right: 15px;
-  color: #a8a8a8; }
-
+    position: relative;
+    padding-right: 15px;
+    color: #a8a8a8;
+}
 .ui-datepicker-year {
-  padding-left: 8px;
-  color: #a8a8a8; }
-
+    padding-left: 8px;
+    color: #a8a8a8;
+}
 .ui-datepicker-month:before {
-  display: block;
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 5px;
-  height: 5px;
-  content: '';
-  background: #ff6347;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px; }
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    content: '';
+ 
+    background: $color-green;
 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
 .ui-datepicker-prev,
 .ui-datepicker-next {
-  position: absolute;
-  top: -2px;
-  padding: 5px;
-  cursor: pointer; }
-
+    position: absolute;
+    top: -2px;
+    padding: 5px;
+    cursor: pointer;
+}
 .ui-datepicker-prev {
-  left: 0;
-  padding-left: 0; }
-
+    left: 0;
+    padding-left: 0;
+}
 .ui-datepicker-next {
-  right: 0;
-  padding-right: 0; }
-
+    right: 0;
+    padding-right: 0;
+}
 .ui-datepicker-prev span,
-.ui-datepicker-next span {
-  display: block;
-  width: 5px;
-  height: 10px;
-  text-indent: -9999px;
-  background-image: url(../img/arrows.png); }
-
-.ui-datepicker-prev span {
-  background-position: 0px 0px; }
-
-.ui-datepicker-next span {
-  background-position: -5px 0px; }
-
-.ui-datepicker-prev-hover span {
-  background-position: 0px -10px; }
-
-.ui-datepicker-next-hover span {
-  background-position: -5px -10px; }
-
+.ui-datepicker-next span{
+    display: block;
+    width: 5px;
+    height: 10px;
+    text-indent: -9999px;
+ 
+    background-image: url(../img/arrows.png);
+}
+.ui-datepicker-prev span { background-position: 0px 0px; }
+.ui-datepicker-next span { background-position: -5px 0px; }
+.ui-datepicker-prev-hover span { background-position: 0px -10px; }
+.ui-datepicker-next-hover span { background-position: -5px -10px; }
 .ui-datepicker-calendar th {
-  padding-top: 15px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-weight: normal;
-  color: #a8a8a8; }
-
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: normal;
+    color: #a8a8a8;
+}
 .ui-datepicker-calendar td {
-  padding: 0 7px;
-  text-align: center;
-  line-height: 26px; }
-
+    padding: 0 7px;
+    text-align: center;
+    line-height: 26px;
+}
 .ui-datepicker-calendar .ui-state-default {
-  display: block;
-  width: 26px;
-  outline: none;
-  text-decoration: none;
-  color: #a8a8a8;
-  border: 1px solid transparent; }
-
+    display: block;
+    width: 26px;
+    outline: none;
+ 
+    text-decoration: none;
+    color: #a8a8a8;
+ 
+    border: 1px solid transparent;
+}
 .ui-datepicker-calendar .ui-state-active {
-  color: #ff6347;
-  border: 1px solid #ff6347; }
-
-.ui-datepicker-other-month .ui-state-default {
-  color: #565656; }
-
+    color: $color-green;
+    border: 1px solid $color-green;
+}
+.ui-datepicker-other-month .ui-state-default { color: #565656; }
+*/
 .container2 h1 {
   color: white; }
 .container2 .col-md-5, .container2 .col-xs-12 {
@@ -476,6 +488,16 @@ footer {
     display: none; }
 
   .divider img {
-    margin-bottom: -35px; } }
+    margin-bottom: -35px; }
+
+  .tourDetails {
+    text-align: left;
+    margin-left: 0; }
+    .tourDetails ul {
+      margin-left: -40px; }
+
+  .tourText h2 {
+    margin-top: 40px;
+    font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
