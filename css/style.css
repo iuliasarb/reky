@@ -31,6 +31,9 @@ p, h1, h2, span {
       color: #ff6347;
       background-color: rgba(255, 255, 255, 0.2); }
 
+.logoTop {
+  max-width: 250px; }
+
 .navbarDown {
   background-color: rgba(255, 255, 255, 0.5);
   border-style: none;
@@ -53,12 +56,17 @@ p, h1, h2, span {
 
 .navbar-toggle {
   color: white;
-  background-color: #2f403c; }
+  background-color: #2f403c;
+  border-radius: 0;
+  padding: 2px 5px; }
   .navbar-toggle .icon-bar {
     background-color: white; }
-  .navbar-toggle:focus, .navbar-toggle:hover {
+  .navbar-toggle:focus, .navbar-toggle:active, .navbar-toggle:hover {
     background-color: #455d58;
     border-color: #455d58; }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #455d58; }
 
 /* .navbar-default .navbar-nav .open .dropdown-menu {
   	background-color: red;
@@ -68,8 +76,8 @@ p, h1, h2, span {
   color: red; }
 
 .navbarTours {
-  border-top: 0.5px solid #ff6347;
-  border-bottom: 0.5px solid #ff6347; }
+  border-top: 0.5px solid #fff;
+  border-bottom: 0.5px solid #fff; }
 
 .txtNav {
   text-transform: uppercase; }
@@ -105,7 +113,12 @@ header {
     header .intro-text .intro-heading2 {
       font-size: 15px;
       line-height: 15px;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      margin-top: -20px; }
+
+.logoMiddle {
+  margin-top: -230px;
+  width: 600px; }
 
 .head_sibiu {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Sibiu_poza mare.jpg");
@@ -140,18 +153,117 @@ header {
       line-height: 15px;
       margin-bottom: 25px; }
 
+.head_brasov {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Brasov_poza mare.jpg");
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Brasov_poza mare.jpg");
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Brasov_poza mare.jpg");
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  min-height: 100%; }
+  .head_brasov .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 7px rgba(30, 30, 30, 0.5); }
+    .head_brasov .intro-text .intro-heading {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px; }
+    .head_brasov .intro-text .intro-heading2 {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 25px; }
+
+.head_cluj {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Cluj_poza mare.jpg");
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Cluj_poza mare.jpg");
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Cluj_poza mare.jpg");
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  min-height: 100%; }
+  .head_cluj .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 7px rgba(30, 30, 30, 0.5); }
+    .head_cluj .intro-text .intro-heading {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px; }
+    .head_cluj .intro-text .intro-heading2 {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 25px; }
+
+.head_sighisoara {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Sighisoara_poza mare.jpg");
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Sighisoara_poza mare.jpg");
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.26) 0%, transparent 100%), url("../img/Food tour Sighisoara_poza mare.jpg");
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  min-height: 100%; }
+  .head_sighisoara .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 7px rgba(30, 30, 30, 0.5); }
+    .head_sighisoara .intro-text .intro-heading {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px; }
+    .head_sighisoara .intro-text .intro-heading2 {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 25px; }
+
 @media (min-width: 768px) {
-  header .intro-text, .head_sibiu .intro-text {
+  header .intro-text, .head_sibiu .intro-text, .head_brasov .intro-text, .head_cluj .intro-text, .head_sighisoara .intro-text {
     padding-top: 300px;
     padding-bottom: 200px; }
-    header .intro-text .intro-heading, .head_sibiu .intro-text .intro-heading {
+    header .intro-text .intro-heading, .head_sibiu .intro-text .intro-heading, .head_brasov .intro-text .intro-heading, .head_cluj .intro-text .intro-heading, .head_sighisoara .intro-text .intro-heading {
       font-family: 'Lato', sans-serif;
       letter-spacing: 2px;
       font-weight: 600;
       font-size: 60px;
       line-height: 60px;
       margin-bottom: 25px; }
-    header .intro-text .intro-heading2, .head_sibiu .intro-text .intro-heading2 {
+    header .intro-text .intro-heading2, .head_sibiu .intro-text .intro-heading2, .head_brasov .intro-text .intro-heading2, .head_cluj .intro-text .intro-heading2, .head_sighisoara .intro-text .intro-heading2 {
       font-size: 25px;
       line-height: 25px;
       margin-bottom: 50px; } }
@@ -186,8 +298,7 @@ header {
 .title {
   text-align: center;
   width: 100%;
-  height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding: 0; }
   .title h1 {
     color: #ff6347;
@@ -196,7 +307,7 @@ header {
     font-weight: bold;
     letter-spacing: 3px;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 20px;
     vertical-align: middle; }
 
 .above {
@@ -205,7 +316,9 @@ header {
   width: 100%; }
 
 .container1 {
-  margin-bottom: 100px; }
+  margin-bottom: -70px; }
+  .container1 .row {
+    margin-bottom: 50px; }
 
 .cityPhoto {
   margin: 0 auto;
@@ -224,7 +337,8 @@ header {
   color: #71978e;
   line-height: 24px;
   font-style: italic;
-  margin: 20px; }
+  margin: 20px;
+  min-height: 75px; }
 
 .details {
   background-color: transparent;
@@ -238,6 +352,24 @@ header {
     color: white;
     transition: .2s ease; }
 
+.detailsTours {
+  background-color: #ff6347;
+  color: #fff;
+  border-radius: 0px;
+  transition: .2s ease;
+  margin-bottom: 20px;
+  margin-top: -15px; }
+  .detailsTours a {
+    color: #fff;
+    text-decoration: none; }
+  .detailsTours:hover {
+    background-color: transparent;
+    color: #ff6347;
+    border: 1px solid #ff6347;
+    transition: .2s ease; }
+    .detailsTours:hover a {
+      color: #ff6347; }
+
 #titlu_sibiu {
   margin-top: 60px;
   margin-bottom: 30px;
@@ -248,7 +380,8 @@ header {
   argin-left: 0; }
   .tourDetails ul {
     list-style: none;
-    margin-left: 0; }
+    margin: 0;
+    padding: 0; }
     .tourDetails ul li {
       margin-left: 0;
       text-transform: uppercase;
@@ -256,11 +389,26 @@ header {
       font-weight: bold;
       font-size: 1.1em; }
 
+.indent {
+  margin-left: 0;
+  color: grey;
+  font-size: 0.9em !important; }
+
 .tourText {
-  margin-top: -22px;
-  text-align: left; }
+  text-align: left;
+  border: 1px solid #ff6347;
+  min-height: 400px; }
   .tourText span {
-    font-weight: bold; }
+    font-weight: bold;
+    color: #ff6347; }
+  .tourText p {
+    margin-top: 2px;
+    margin-bottom: 2px; }
+    .tourText p a {
+      font-weight: bold;
+      color: #71978e; }
+  .tourText h2 {
+    margin-bottom: 20px; }
 
 .hLine {
   width: 30%;
@@ -270,7 +418,12 @@ header {
   margin-bottom: 40px; }
 
 .tiTour {
-  color: #ff6347; }
+  color: #ff6347;
+  margin-top: 10px;
+  font-weight: bold; }
+
+.imgTours {
+  margin-top: 0; }
 
 /* CALENDAR ******************************************
 #calendar {
@@ -376,11 +529,14 @@ header {
 }
 .ui-datepicker-other-month .ui-state-default { color: #565656; }
 */
-.container2 h1 {
-  color: white; }
-.container2 .col-md-5, .container2 .col-xs-12 {
-  padding-right: 0;
-  padding-left: 0; }
+.container2 {
+  margin-top: 0;
+  padding-top: 0; }
+  .container2 h1 {
+    color: white; }
+  .container2 .col-md-5, .container2 .col-xs-12 {
+    padding-right: 0;
+    padding-left: 0; }
 
 .local-text {
   margin: 0;
@@ -414,7 +570,7 @@ figure {
     } */ }
 
 figcaption {
-  min-height: 150px;
+  min-height: 200px;
   border-top: 5px solid #2f403c;
   color: #fff;
   top: 0;
@@ -422,30 +578,44 @@ figcaption {
   padding: 0 20px;
   background-color: #5f807a;
   text-align: left; }
+  figcaption h2 {
+    margin-top: 10px;
+    margin-bottom: 25px; }
+  figcaption p {
+    margin: 3px; }
 
 .container3 {
   color: #2f403c; }
+  .container3 p {
+    margin-bottom: 30px; }
+
+.poza_familia {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 20px; }
 
 footer {
+  margin-top: 50px;
   background-color: #2f403c;
   min-height: 200px;
   color: white; }
   footer .colLeft {
     margin-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    border-right: 1px solid white; }
     footer .colLeft ul {
       list-style: none;
       padding-left: 0; }
       footer .colLeft ul li {
-        margin: 10px 0; }
+        margin: 4px 0; }
         footer .colLeft ul li i {
           margin-right: 15px; }
     footer .colLeft a {
       color: white; }
   footer .colRight {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-left: 1px solid white; }
+    margin-top: 121px;
+    margin-bottom: 30px; }
     footer .colRight a {
       color: white; }
   footer .firstP {
@@ -456,9 +626,11 @@ footer {
     letter-spacing: 1px; }
 
 #face-icon {
-  width: 26px;
+  width: 20px;
   margin-top: -4px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  margin-right: 13px;
+  margin-left: -3px;
   border: 0.5px solid white;
   padding: 3px;
   border-radius: 50%; }
@@ -478,8 +650,16 @@ footer {
     .title h1 {
       font-size: 30px; }
 
+  .pUnder {
+    min-height: 40px !important; }
+
+  footer .colLeft {
+    border-right: none; }
+
   footer .colRight {
-    border-left: none; }
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+    padding-top: 15px; }
 
   .sideContacts {
     display: none; }
@@ -493,11 +673,24 @@ footer {
   .tourDetails {
     text-align: left;
     margin-left: 0; }
-    .tourDetails ul {
-      margin-left: -40px; }
 
-  .tourText h2 {
-    margin-top: 40px;
-    font-size: 20px; } }
+  .tourText {
+    min-height: 100px;
+    margin-top: 5px; }
+    .tourText h2 {
+      margin-top: 15px;
+      font-size: 20px; }
+
+  .logoTop {
+    max-width: 170px; }
+
+  .navbarUp .containerUpNav .navbarRightUp a {
+    color: white;
+    font-size: 18px;
+    background-color: #2f403c; }
+
+  .logoMiddle {
+    margin-top: 50px;
+    max-width: 200px; } }
 
 /*# sourceMappingURL=style.css.map */

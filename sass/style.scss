@@ -51,6 +51,10 @@ p, h1, h2, span {
   	}
   }
 }
+.logoTop {
+  max-width: 250px;
+}
+
 
 .navbarDown {
   background-color: rgba(255, 255, 255, 0.5);
@@ -86,17 +90,24 @@ p, h1, h2, span {
 .navbar-toggle {
   	color: white;
     background-color: $brand-primary;
+    border-radius: 0;
+    padding: 2px 5px;
   
 
     .icon-bar {
       background-color: white;
     }
     &:focus,
+    &:active,
     &:hover {
       background-color: lighten($brand-primary, 10%);
       border-color: lighten($brand-primary, 10%);
     }
 }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: lighten($brand-primary, 10%);
+}
+
 
 /* .navbar-default .navbar-nav .open .dropdown-menu {
   	background-color: red;
@@ -106,8 +117,8 @@ p, h1, h2, span {
  	color:red;
  }
 .navbarTours {
-  border-top: 0.5px solid $color-green;
-  border-bottom: 0.5px solid $color-green;
+  border-top: 0.5px solid #fff;
+  border-bottom: 0.5px solid #fff;
 }
 .txtNav {
 	text-transform: uppercase;
@@ -147,8 +158,13 @@ header {
       font-size: 15px;
       line-height: 15px;
       margin-bottom: 25px;
+      margin-top: -20px;
     }
   }
+}
+.logoMiddle {
+  margin-top: -230px;
+  width: 600px;
 }
 .head_sibiu {
   background: -moz-linear-gradient(top,  rgba(0,0,0,0.26) 0%, rgba(0,0,0,0) 100%), url('../img/Food tour Sibiu_poza mare.jpg'); /* FF3.6-15 */
@@ -183,9 +199,109 @@ header {
     }
   }
 }
+.head_brasov {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.26) 0%, rgba(0,0,0,0) 100%), url('../img/Food tour Brasov_poza mare.jpg'); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.26) 0%,rgba(0,0,0,0) 100%), url('../img/Food tour Brasov_poza mare.jpg'); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.26) 0%,rgba(0,0,0,0) 100%), url('../img/Food tour Brasov_poza mare.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  text-align: center;
+  color: white;
+  min-height: 100%;
+  .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 7px rgba(30, 30, 30, 0.5);
+    .intro-heading {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 2px;
+    font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px;
+    }
+    .intro-heading2 {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 25px;
+    }
+  }
+}
+.head_cluj {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.26) 0%, rgba(0,0,0,0) 100%), url('../img/Food tour Cluj_poza mare.jpg'); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.26) 0%,rgba(0,0,0,0) 100%), url('../img/Food tour Cluj_poza mare.jpg'); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.26) 0%,rgba(0,0,0,0) 100%), url('../img/Food tour Cluj_poza mare.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  text-align: center;
+  color: white;
+  min-height: 100%;
+  .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 7px rgba(30, 30, 30, 0.5);
+    .intro-heading {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 2px;
+    font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px;
+    }
+    .intro-heading2 {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.head_sighisoara {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.26) 0%, rgba(0,0,0,0) 100%), url('../img/Food tour Sighisoara_poza mare.jpg'); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.26) 0%,rgba(0,0,0,0) 100%), url('../img/Food tour Sighisoara_poza mare.jpg'); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.26) 0%,rgba(0,0,0,0) 100%), url('../img/Food tour Sighisoara_poza mare.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  text-align: center;
+  color: white;
+  min-height: 100%;
+  .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 5px 5px 7px rgba(30, 30, 30, 0.5);
+    .intro-heading {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 2px;
+    font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 25px;
+    }
+    .intro-heading2 {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 25px;
+    }
+  }
+}
 
 @media(min-width:768px) {
-  header, .head_sibiu {
+  header, .head_sibiu, .head_brasov, .head_cluj, .head_sighisoara {
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
@@ -250,14 +366,9 @@ header {
 } 
 
 .title {
-	//border-top: 0.5px solid $color-green;
-	//border-bottom: 0.5px solid $color-green;
-	//background-color: lightgrey;
 	text-align: center;
 	width: 100%;
-	height: 50px;
-    //margin-top: 100px;
-	margin-bottom: 20px;
+	margin-bottom: 0;
 	padding: 0;
     h1 {
 		color: $color-green;
@@ -267,10 +378,11 @@ header {
 	    font-weight: bold;
 	    letter-spacing: 3px;
 	    font-size: 40px;
-	    line-height: 40px;
+	    line-height: 20px;
 	    vertical-align: middle;
 	}
 }
+
 .above {
 	margin-top: -120px;
 	height: 100px;
@@ -279,7 +391,11 @@ header {
 
 //Container 1 ***************************************************
 .container1 {
-  margin-bottom: 100px;
+  margin-bottom: -70px;
+  .row {
+    //background-color: blue;
+    margin-bottom: 50px;
+  }
 }
 .cityPhoto {
 	margin: 0 auto;
@@ -300,6 +416,7 @@ header {
 		line-height: 24px;
 		font-style: italic;
 		margin: 20px;
+    min-height: 75px;
 }
 .details {
   background-color: transparent;
@@ -314,6 +431,28 @@ header {
     color: white;
     transition: .2s ease;
   	}
+}
+.detailsTours {
+  background-color: $color-green;
+  color: #fff;
+  border-radius: 0px;
+  transition: .2s ease;
+  margin-bottom: 20px;
+  margin-top: -15px;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  &:hover {
+    background-color: transparent;
+    color: $color-green;
+    border: 1px solid $color-green;
+    transition: .2s ease;
+    a{
+      color: $color-green;
+    }
+    }
 }
 //End of container1**********************************************
 //Container SIBIU************************************************
@@ -331,7 +470,8 @@ header {
 	argin-left: 0;
 	ul {
 		list-style: none;
-		margin-left: 0;
+		margin: 0;
+		padding: 0;
 		li {
 			margin-left: 0;
 			text-transform: uppercase;
@@ -341,12 +481,34 @@ header {
 		}
 	}
 }
+.indent {
+	//margin-right: 20px;
+	margin-left: 0;
+	color: grey;
+	font-size: 0.9em !important;
+}
 .tourText {
-	margin-top: -22px;
 	text-align: left;
+  border: 1px solid $color-green;
+  min-height: 400px;
 	span {
 		font-weight: bold;
+    color: $color-green;
 	}
+  p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    a{
+      font-weight: bold;
+      color: lighten($brand-primary, 30%);
+    }
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+#trips {
+  //margin-top: 10px;
 }
 .hLine {
 	width: 30%;
@@ -357,6 +519,11 @@ header {
 }
 .tiTour {
 	color: $color-green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.imgTours {
+  margin-top: 0;
 }
 
 /* CALENDAR ******************************************
@@ -467,6 +634,8 @@ header {
 //Container 2 ***************************************************
 .container2 {
 	//background-color: lightgrey;
+  margin-top: 0;
+  padding-top: 0;
 	h1 {
 	  color: white;
 	}
@@ -475,7 +644,6 @@ header {
 		padding-left: 0;
 	}
 }
-
 .local-text {
 	margin: 0;
 	padding: 0;
@@ -513,7 +681,7 @@ figure {
 
 
 figcaption {
-	min-height: 150px;
+	min-height: 200px;
 	//max-width: 550px;
 	//opacity: 0.7;
 	border-top: 5px solid #2f403c;
@@ -523,24 +691,45 @@ figcaption {
 	padding: 0 20px;
 	background-color: #5f807a;
 	text-align: left;
+	h2 {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+	p {
+		margin: 3px;
+	}
 	
 }
 .container3{
 	color: $brand-primary;
+  p {
+    margin-bottom: 30px;
+  }
+}
+.poza_familia {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
+
+
+
 footer {
+  margin-top: 50px;
   background-color: $brand-primary;
   min-height: 200px;
   color: white;
   .colLeft {
   	margin-top: 30px;
   	margin-bottom: 30px;
+  	border-right: 1px solid white;	
   	 ul {
       list-style: none;
       padding-left: 0;
       li {
-      margin: 10px 0;
+      margin: 4px 0;
         i {
         	margin-right: 15px;
         }
@@ -551,9 +740,8 @@ footer {
   	}
   }
   .colRight {
-  	margin-top: 30px;
+  	margin-top: 121px;
   	margin-bottom: 30px;
-  	border-left: 1px solid white;
   	a {
   	color: white;
   	}
@@ -567,9 +755,11 @@ footer {
   	}
 }
 #face-icon {
-	width: 26px;
+	width: 20px;
     margin-top: -4px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    margin-right: 13px;
+    margin-left: -3px;
     border: 0.5px solid white;
     padding: 3px;
     border-radius: 50%;
@@ -600,8 +790,16 @@ footer {
        font-size: 30px;
      }
    }
+   .pUnder {
+    min-height: 40px !important;
+   }
+    footer .colLeft{
+     border-right: none;
+    }
     footer .colRight{
-     border-left: none;
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+    padding-top: 15px;
     }
     .sideContacts {
     	display: none;
@@ -618,13 +816,28 @@ footer {
 	text-align: left;
 	margin-left: 0;
 	ul {
-	  margin-left: -40px;
+
       }
     }
     .tourText {
-    	h2 {
-    		margin-top: 40px;
-    		font-size: 20px;
+        min-height: 100px;
+        margin-top: 5px;
+
+      h2 {
+        margin-top: 15px;
+        font-size: 20px;
     	}
+    }
+    .logoTop {
+      max-width: 170px;
+    }
+    .navbarUp .containerUpNav .navbarRightUp a {
+    color: white;
+    font-size: 18px;
+    background-color: $brand-primary;
+    }
+    .logoMiddle {
+      margin-top: 50px;
+      max-width: 200px;
     }
 }
