@@ -163,7 +163,7 @@ header {
   }
 }
 .logoMiddle {
-  margin-top: -230px;
+  margin-top: -300px;
   width: 600px;
 }
 .head_sibiu {
@@ -317,13 +317,15 @@ header {
 
       .intro-heading2 {
         font-size: 25px;
-        line-height: 25px;
+        line-height: 30px;
         margin-bottom: 50px;
       }
     }
   }
 }
-
+a.page-scroll{
+  color: $color-green;
+  }
 .sideContacts {
 	float: left;
 	margin-left: 0;
@@ -342,7 +344,7 @@ header {
             &:active,
       		&:focus,
       		&:hover {
-      		  background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.3);
       		  }
 			i {
 				margin: 0;
@@ -352,18 +354,23 @@ header {
 	}
 	#face-icon-head {
 		width: 33px;
+    padding: 3px;
 	}
 }
 
 // End Of Header ************************************************
 
 .divider {
-  width: 100px;
+  width: 160px;
   display: block;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-top: 80px;
 
 } 
+#onion {
+  width: 290px;
+}
 
 .title {
 	text-align: center;
@@ -788,6 +795,7 @@ footer {
 	 margin-bottom: 25px;
      h1 {
        font-size: 30px;
+       line-height: 25px;
      }
    }
    .pUnder {
@@ -809,7 +817,7 @@ footer {
     }
     .divider {
     	img {
-    	margin-bottom: -35px;
+    	margin-bottom: -25px;
         }
     }
     .tourDetails {
@@ -840,4 +848,8 @@ footer {
       margin-top: 50px;
       max-width: 200px;
     }
+    .divider {
+    width: 100px;
+    margin-bottom: 10px;
+    } 
 }

@@ -117,7 +117,7 @@ header {
       margin-top: -20px; }
 
 .logoMiddle {
-  margin-top: -230px;
+  margin-top: -300px;
   width: 600px; }
 
 .head_sibiu {
@@ -265,8 +265,11 @@ header {
       margin-bottom: 25px; }
     header .intro-text .intro-heading2, .head_sibiu .intro-text .intro-heading2, .head_brasov .intro-text .intro-heading2, .head_cluj .intro-text .intro-heading2, .head_sighisoara .intro-text .intro-heading2 {
       font-size: 25px;
-      line-height: 25px;
+      line-height: 30px;
       margin-bottom: 50px; } }
+a.page-scroll {
+  color: #ff6347; }
+
 .sideContacts {
   float: left;
   margin-left: 0;
@@ -287,13 +290,18 @@ header {
         margin: 0;
         padding: 6px; }
   .sideContacts #face-icon-head {
-    width: 33px; }
+    width: 33px;
+    padding: 3px; }
 
 .divider {
-  width: 100px;
+  width: 160px;
   display: block;
   margin: 0 auto;
-  margin-top: 60px; }
+  margin-bottom: 30px;
+  margin-top: 80px; }
+
+#onion {
+  width: 290px; }
 
 .title {
   text-align: center;
@@ -648,7 +656,8 @@ footer {
     margin-top: 50px;
     margin-bottom: 25px; }
     .title h1 {
-      font-size: 30px; }
+      font-size: 30px;
+      line-height: 25px; }
 
   .pUnder {
     min-height: 40px !important; }
@@ -668,7 +677,7 @@ footer {
     display: none; }
 
   .divider img {
-    margin-bottom: -35px; }
+    margin-bottom: -25px; }
 
   .tourDetails {
     text-align: left;
@@ -691,6 +700,10 @@ footer {
 
   .logoMiddle {
     margin-top: 50px;
-    max-width: 200px; } }
+    max-width: 200px; }
+
+  .divider {
+    width: 100px;
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
