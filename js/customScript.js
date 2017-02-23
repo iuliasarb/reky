@@ -17,3 +17,14 @@ $(document).ready(function(){
 
 
 });
+
+$(function(){
+  var titleTour;
+  $(".detailsTours").click(function(){
+        titleTour = $(this).parent().find('.tiTour').html();
+        $('#form-name').val(titleTour);
+    });
+  
+  
+  
+});

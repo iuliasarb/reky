@@ -11,11 +11,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 
+<!-- Style -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />  
-    <link href="css/style.css" rel="stylesheet" />
+<!-- Scripts -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="js/jquery-ui-datepicker.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/customScript.js"></script>
 
+<script>
+    var indexData = {};
+
+    $(document).ready(function(){
+      $('.btn').on('click', function(){
+        $('#ifrm').attr('src', 'booking.html');
+    indexData.title = $(this).parent().find('.tiTour').html();
+    console.log($(this).parent().find('.tiTour').html());
+      });
+    
+    });
+</script>
+
+<!-- GoogleAnalyticsObject  -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -104,7 +124,19 @@
         </ul>
 
         <br>
-        <button class="btn detailsTours"><a href="http://www.transylvanian-taste.com/thankyou.html">Find out more & Book</a></button>
+        <button class="btn detailsTours" data-toggle="modal" data-target="#click">Find out more & Book</button>
+        <div class="modal fade" tabindex="-1" role="dialog" id="click">
+           <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                 <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 </div>
+              <div class="modal-body">
+                 <iframe src="" id="ifrm" frameborder="0" border="0" width="100%" style="min-height:600px"></iframe>
+              </div>
+              </div>
+           </div>
+        </div>
 
        </div>
       </div>
@@ -159,11 +191,5 @@
 </footer>
 
 
-  <!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/jquery-ui-datepicker.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <script src="js/customScript.js"></script>
 </body>
 </html>

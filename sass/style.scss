@@ -439,6 +439,8 @@ a.page-scroll{
     transition: .2s ease;
   	}
 }
+
+
 .detailsTours {
   background-color: $color-green;
   color: #fff;
@@ -461,6 +463,8 @@ a.page-scroll{
     }
     }
 }
+
+
 //End of container1**********************************************
 //Container SIBIU************************************************
 .container_sibiu {
@@ -681,7 +685,7 @@ footer {
 .pageThankyou {
   background-color: white;
   margin: 0;
-  height: 70%;
+  height: 35%;
   
 }
 .contactThankyou {
@@ -693,11 +697,14 @@ footer {
   margin: 0 auto;
   margin-top: 20px;
 }
+
+
 @media(min-width:768px) {
   .navbar-brand {
    font-size: 1.5em;
    }
 }
+
 
 @media (max-width: 767px) {                  
    .navbarDown {
@@ -734,11 +741,8 @@ footer {
         }
     }
     .tourDetails {
-	text-align: left;
-	margin-left: 0;
-	ul {
-
-      }
+	   text-align: left;
+	   margin-left: 0;
     }
     .tourText {
         min-height: 100px;
@@ -765,4 +769,20 @@ footer {
     width: 100px;
     margin-bottom: 10px;
     } 
+}
+#btn-ThankyouPage {
+    min-width: 200px;
+    margin-top: 0;
+}
+.modal-header {
+  color: white;
+  background-color: $brand-primary;
+  .close {
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .8;
+}
+}
+input {
+  width: 100%;
 }

@@ -548,7 +548,7 @@ footer {
 .pageThankyou {
   background-color: white;
   margin: 0;
-  height: 70%; }
+  height: 35%; }
 
 .contactThankyou {
   margin-top: 150px; }
@@ -619,5 +619,19 @@ footer {
   .divider {
     width: 100px;
     margin-bottom: 10px; } }
+#btn-ThankyouPage {
+  min-width: 200px;
+  margin-top: 0; }
+
+.modal-header {
+  color: white;
+  background-color: #2f403c; }
+  .modal-header .close {
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .8; }
+
+input {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
