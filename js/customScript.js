@@ -1,3 +1,5 @@
+var indexData = {};
+
 $(document).ready(function(){
   $(window).scroll(function() { 
     if ($(document).scrollTop() > 150) { 
@@ -5,26 +7,11 @@ $(document).ready(function(){
     } else {
       $("#mainNav").css("background-color", "transparent"); 
     }
-  });
+	});
 
 
-  $('#calendar').datepicker({
-        inline: true,
-        firstDay: 1,
-        showOtherMonths: true,
-        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    });
-
-
-});
-
-$(function(){
-  var titleTour;
-  $(".detailsTours").click(function(){
-        titleTour = $(this).parent().find('.tiTour').html();
-        $('#form-name').val(titleTour);
-    });
-  
-  
-  
+  $('.btn').on('click', function(){
+        $('#ifrm').attr('src', 'booking.html');
+     indexData.title = $(this).parent().find('.tiTour').html();
+   });
 });
