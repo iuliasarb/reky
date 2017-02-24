@@ -54,7 +54,7 @@
 <div class="container container-fluid">
     <div class="row">
       <div class="col-md-6">
-        <form id="contact-form" method="POST" action="https://formspree.io/tours@transylvanian-taste.com" role="form">
+        <form id="contact-form" method="POST" action="https://formspree.io/tours@transylvanian-taste.com" role="form" target="_parent">
           <div class="messages"></div>
           <div class="controls">
             <div class="form-group">
@@ -99,6 +99,7 @@
             </div>
             <input id="btn-ThankyouPage" type="submit" class="btn detailsTours btn-send" value="Book now!">
             <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            <input type="hidden" name="_next" value="http://www.transylvanian-taste.com/thankyou.html" />
           </div>
 
 

@@ -634,4 +634,10 @@ footer {
 input {
   width: 100%; }
 
+#thankyouFooter {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0; }
+
 /*# sourceMappingURL=style.css.map */
